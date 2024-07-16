@@ -1,0 +1,39 @@
+<mvc:View controllerName="project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+       
+             
+               <content>
+            <Table id="emailTable" items="{viewData>/}">
+                <columns>
+                <Column>
+                        <Text text="Full Name" />
+                    </Column>
+                    <Column>
+                        <Text text="Email" />
+                    </Column>
+                    <Column>
+                        <Text text="Password" />
+                    </Column>
+                     <Column>
+                        <Text text="Mobile" />
+                    </Column>
+                    
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{viewData>name}" />
+                             <Text text="{viewData>email}" />
+                              <Text text="{viewData>password}" />
+                               <Text text="{viewData>mobile}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+           
+         
+        </content>
+    </Page>
+</mvc:View>

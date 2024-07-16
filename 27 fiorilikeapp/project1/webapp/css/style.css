@@ -1,0 +1,9 @@
+.trueConditionClass {
+    color: green;
+    font-weight: bold;
+}
+
+.falseConditionClass {
+    color: red;
+    font-style: italic;
+}
